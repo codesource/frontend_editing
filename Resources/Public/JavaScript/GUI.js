@@ -14,7 +14,8 @@
 /**
  * FrontendEditing.GUI: Functionality related to the GUI and events listeners
  */
-define(['jquery', 'TYPO3/CMS/FrontendEditing/Crud', 'TYPO3/CMS/FrontendEditing/Editor', 'toastr', 'alertify', 'TYPO3/CMS/Backend/Modal'], function ($, FrontendEditing, Editor, toastr, alertify, Modal) {
+define(['jquery', 'TYPO3/CMS/FrontendEditing/Crud', 'TYPO3/CMS/FrontendEditing/Editor', 'toastr', 'alertify', 'TYPO3/CMS/Backend/Modal', 'TYPO3/CMS/Backend/ImageManipulation'],
+	function ($, FrontendEditing, Editor, toastr, alertify, Modal, ImageManipulation) {
 	'use strict';
 
 	// Extend FrontendEditing with the following functions

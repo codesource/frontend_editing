@@ -1,0 +1,52 @@
+// Mixins
+// =============================================================================
+
+// Vendor Prefixes
+// -----------------------------------------------------------------------------
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+  -moz-box-sizing: @boxmodel;
+  box-sizing: @boxmodel;
+}
+
+.user-select(@select) {
+  -webkit-user-select: @select;
+  -moz-user-select: @select;
+  -ms-user-select: @select; // IE10+
+  user-select: @select;
+}
+
+// Opacity
+// -----------------------------------------------------------------------------
+.opacity(@opacity) {
+  opacity: @opacity;
+}
+
+// Sizing shortcuts
+// -----------------------------------------------------------------------------
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.min-size(@width, @height) {
+  min-width: @width;
+  min-height: @height;
+}
+
+.max-size(@width, @height) {
+  max-width: @width;
+  max-height: @height;
+}
+
+.square(@size) {
+  @include size(@size, @size);
+}
+
+.min-square(@size) {
+  @include min-size(@size, @size);
+}
+
+.max-square(@size) {
+  @include max-size(@size, @size);
+}
