@@ -99,7 +99,7 @@ define(['jquery', 'ckeditor', 'ckeditor-jquery-adapter'], function ($, CKEDITOR)
 							// Hide header of modal
 							currentModal.find('.modal-header').hide();
 
-							// Simulate BE environment with correct CKEditor instance for  RteLinkBrowser
+							// Simulate BE environment with correct CKEditor instance for RteLinkBrowser
 							currentModal.find(Modal.identifiers.iframe).on('load',function() {
 								top.TYPO3.Backend = top.TYPO3.Backend || {};
 								top.TYPO3.Backend.ContentContainer = {
